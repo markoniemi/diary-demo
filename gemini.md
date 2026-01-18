@@ -10,10 +10,9 @@
 
 ## 2. Component Architecture
 
-* **Folder Structure:** * `src/components/ui`: Common Bootstrap wrappers (Custom Buttons, Modals).
-* `src/components/features`: Feature-specific logic.
-
-
+* **Folder Structure:** 
+  * `src/components/ui`: Common Bootstrap wrappers (Custom Buttons, Modals).
+  * `src/components/features`: Feature-specific logic.
 * **File Naming:** PascalCase for components (`UserCard.tsx`).
 * **Bootstrap Integration:** Use `react-bootstrap` for complex components (Modals, Dropdowns) to ensure accessibility and React lifecycle compatibility.
 
@@ -114,3 +113,7 @@ export const LoginForm = () => {
 * **Quality:** All code must pass `eslint` and `tsc` (TypeScript Compiler) check before PR approval.
 
 ---
+
+## 8. Testing Support
+
+* **Selectors:** Use `data-testid` attributes for elements targeted by Selenium/E2E tests. Avoid using CSS classes for test selectors as they may change.
