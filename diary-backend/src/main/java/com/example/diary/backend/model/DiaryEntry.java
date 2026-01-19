@@ -20,18 +20,13 @@ public class DiaryEntry {
     @NotBlank
     private String content;
 
-    private LocalDateTime createdAt;
+    private LocalDateTime createdDate;
 
     public DiaryEntry() {
-        this.createdAt = LocalDateTime.now();
+        this.createdDate = LocalDateTime.now();
     }
 
-    public DiaryEntry(String title, String content) {
-        this.title = title;
-        this.content = content;
-        this.createdAt = LocalDateTime.now();
-    }
-
+    // Getters and Setters
     public Long getId() {
         return id;
     }
@@ -56,11 +51,11 @@ public class DiaryEntry {
         this.content = content;
     }
 
-    public LocalDateTime getCreatedAt() {
-        return createdAt;
+    public LocalDateTime getCreatedDate() {
+        return createdDate;
     }
 
-    public void setCreatedAt(LocalDateTime createdAt) {
-        this.createdAt = createdAt;
+    public void setCreatedDate(LocalDateTime createdDate) {
+        this.createdDate = createdDate;
     }
 }

@@ -66,6 +66,7 @@ The project follows a microservices-lite architecture within a monorepo.
     *   **Integration**: `RestAssured` for API testing.
     *   **Testcontainers**: Uses `Testcontainers` to run the `oauth-server` Docker image during integration/E2E tests to ensure full security flow verification.
     *   **E2E**: Selenium WebDriver with Page Object Model (POM) located in `src/test/java`.
+    *   Local development application that runs backend application with testcontainers.
 
 ## 5. Testing Strategy
 

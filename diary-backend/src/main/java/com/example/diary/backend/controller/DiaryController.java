@@ -10,12 +10,11 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/entries")
-@CrossOrigin(origins = "http://localhost:3000")
-public class DiaryEntryController {
+public class DiaryController {
 
     private final DiaryEntryRepository repository;
 
-    public DiaryEntryController(DiaryEntryRepository repository) {
+    public DiaryController(DiaryEntryRepository repository) {
         this.repository = repository;
     }
 

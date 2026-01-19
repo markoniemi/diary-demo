@@ -8,8 +8,8 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 const oidcConfig: AuthProviderProps = {
   authority: "http://localhost:9000",
   client_id: "diary-client",
-  redirect_uri: "http://localhost:3000/callback",
-  post_logout_redirect_uri: "http://localhost:3000/",
+  redirect_uri: window.location.origin + "/login/oauth2/code/diary-client",
+  post_logout_redirect_uri: window.location.origin,
   scope: "openid profile diary.read diary.write",
   onSigninCallback: (_user) => {
       window.history.replaceState({}, document.title, window.location.pathname);
